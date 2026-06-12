@@ -8,8 +8,9 @@
 
 <header class="navbar">
     <div class="logo">Mbuguah Designs</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <nav>
+    <nav class="menu" id="menu">
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
@@ -32,6 +33,12 @@
         Chat on WhatsApp
     </a>
 </section>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
