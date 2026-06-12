@@ -11,16 +11,20 @@ header {
     justify-content: space-between;
     padding: 15px 20px;
     background: #020617;
+    animation: fadeDown 1s ease;
 }
 
-header h1 {
+.logo {
     color: #38bdf8;
+    font-size: 22px;
 }
 
+/* NAV */
 nav a {
     color: white;
     margin-left: 15px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -31,6 +35,7 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
+    animation: fadeUp 1s ease;
 }
 
 .hero h2 {
@@ -45,9 +50,14 @@ nav a:hover {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
-/* SERVICES + PRICING */
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -60,18 +70,11 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    transition: 0.3s;
 }
 
-/* WHATSAPP BUTTON */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: green;
-    color: white;
-    padding: 12px 15px;
-    border-radius: 50px;
-    text-decoration: none;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* GALLERY */
@@ -83,7 +86,7 @@ nav a:hover {
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 /* LIGHTBOX */
@@ -104,4 +107,27 @@ nav a:hover {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
 }
