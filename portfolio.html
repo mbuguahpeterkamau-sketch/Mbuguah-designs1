@@ -1,7 +1,12 @@
 <div class="gallery">
 
-    <img src="logo1.jpg" alt="Logo Design">
-    <img src="poster1.jpg" alt="Poster Design">
-    <img src="flyer1.jpg" alt="Flyer Design">
+    <img src="logo1.jpg" onclick="openLightbox(this)">
+    <img src="poster1.jpg" onclick="openLightbox(this)">
+    <img src="flyer1.jpg" onclick="openLightbox(this)">
 
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
 </div>
