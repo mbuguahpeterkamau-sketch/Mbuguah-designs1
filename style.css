@@ -23,15 +23,52 @@ body {
     font-weight: bold;
 }
 
-nav a {
+/* MENU */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
     color: white;
-    margin-left: 15px;
     text-decoration: none;
+    padding: 6px 10px;
     transition: 0.3s;
 }
 
-nav a:hover {
+.menu a:hover {
     color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* MOBILE MENU BUTTON */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #020617;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 /* HERO */
@@ -52,7 +89,6 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
-    display: inline-block;
 }
 
 .btn:hover {
