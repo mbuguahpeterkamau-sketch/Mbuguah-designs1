@@ -10,34 +10,39 @@
 <div class="menu-btn" onclick="toggle()">☰</div>
 
 <div class="sidebar" id="sidebar">
-<h2>Order System</h2>
+
+<div class="logo-box">
+<img src="logo1.png">
+<span>Mbuguah Designs</span>
+</div>
 
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="order.html">Order</a>
 <a href="contact.html">Contact</a>
 <a href="dashboard.html">Dashboard</a>
+
 </div>
 
 <div class="main">
 
 <section class="hero">
-<h2>Place Order</h2>
+<h2>Place Your Order</h2>
 </section>
 
 <form action="https://formsubmit.co/mbuguahdesigns@gmail.com" method="POST" class="card">
 
-<input type="text" name="name" placeholder="Name" required><br><br>
+<input name="name" placeholder="Your Name" required><br><br>
 
-<input type="email" name="email" placeholder="Email" required><br><br>
+<input name="email" placeholder="Your Email" required><br><br>
 
 <select name="service">
-<option>Logo - Ksh 500</option>
-<option>Poster - Ksh 1000</option>
+<option>Logo Design - Ksh 500</option>
+<option>Poster Design - Ksh 1000</option>
 <option>Branding - Ksh 2000</option>
 </select><br><br>
 
-<textarea name="details" placeholder="Describe your order"></textarea><br><br>
+<textarea name="message" placeholder="Project details"></textarea><br><br>
 
 <button class="btn">Submit Order</button>
 
@@ -49,12 +54,6 @@
 </div>
 
 </div>
-
-<script>
-function toggle(){
-document.getElementById("sidebar").classList.toggle("active");
-}
-</script>
 
 </body>
 </html>
