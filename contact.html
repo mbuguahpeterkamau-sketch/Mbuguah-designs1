@@ -7,28 +7,36 @@
 
 <body>
 
-<header class="navbar">
-<div class="logo">Mbuguah Designs</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="menu-btn" onclick="toggle()">☰</div>
 
-<nav class="menu" id="menu">
+<div class="sidebar" id="sidebar">
+<h2>Contact</h2>
+
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
 <a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
 <a href="dashboard.html">Dashboard</a>
-</nav>
-</header>
+</div>
+
+<div class="main">
 
 <section class="hero">
 <h2>Contact Us</h2>
 
 <p>Phone: 0790234031</p>
-
 <p>Email: mbuguahdesigns@gmail.com</p>
 
-<a class="btn" href="https://wa.me/254790234031">WhatsApp Us</a>
+<a class="btn" href="https://wa.me/254790234031">WhatsApp</a>
 </section>
+
+</div>
+
+<script>
+function toggle(){
+document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
