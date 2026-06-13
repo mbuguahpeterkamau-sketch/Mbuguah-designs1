@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="navbar">
-    <div class="logo">Mbuguah Designs</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="logo">Mbuguah Designs</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <nav class="menu" id="menu">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        <a href="dashboard.html">Dashboard</a>
-    </nav>
+<nav class="menu" id="menu">
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+<a href="order.html">Order</a>
+<a href="dashboard.html">Dashboard</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h2>Our Portfolio</h2>
+<h2>Our Portfolio</h2>
 </section>
 
 <div class="grid gallery">
 
-    <img src="logo1.jpg" onclick="openLightbox(this)">
-    <img src="poster1.jpg" onclick="openLightbox(this)">
-    <img src="flyer1.jpg" onclick="openLightbox(this)">
+<img src="logo1.jpg" onclick="openImg(this)">
+<img src="poster1.jpg" onclick="openImg(this)">
+<img src="flyer1.jpg" onclick="openImg(this)">
 
 </div>
 
-<div id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img">
+<div id="lightbox" onclick="closeImg()">
+<img id="bigimg">
 </div>
 
 <script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("active");
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
 }
 
-function openLightbox(img) {
-    document.getElementById("lightbox").style.display = "flex";
-    document.getElementById("lightbox-img").src = img.src;
+function openImg(img){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("bigimg").src=img.src;
 }
 
-function closeLightbox() {
-    document.getElementById("lightbox").style.display = "none";
+function closeImg(){
+document.getElementById("lightbox").style.display="none";
 }
 </script>
 
