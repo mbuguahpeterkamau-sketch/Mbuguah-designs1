@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mbuguah Designs</title>
-
+<title>Mbuguah SaaS</title>
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header class="navbar">
-<div class="logo">Mbuguah Designs</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="menu-btn" onclick="toggle()">☰</div>
 
-<nav class="menu" id="menu">
+<div class="sidebar" id="sidebar">
+<h2>Mbuguah SaaS</h2>
+
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
 <a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
 <a href="dashboard.html">Dashboard</a>
-</nav>
-</header>
-
-<section class="hero">
-<h2>Creative Designs That Build Brands</h2>
-<p>Logos • Posters • Branding • Social Media</p>
-<a class="btn" href="order.html">Order Now</a>
-</section>
-
-<div class="socials">
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-x-twitter"></i></a>
 </div>
 
-<footer>© 2026 Mbuguah Designs</footer>
+<div class="main">
+
+<section class="hero">
+<h1>Welcome to Mbuguah SaaS</h1>
+<p>Designs • Branding • Digital Services</p>
+<a class="btn" href="order.html">Start Order</a>
+</section>
+
+<div class="card">
+<h3>Why Choose Us?</h3>
+<p>Fast delivery, premium designs, affordable pricing.</p>
+</div>
+
+</div>
 
 <script>
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("active");
+function toggle(){
+document.getElementById("sidebar").classList.toggle("active");
 }
 </script>
 
