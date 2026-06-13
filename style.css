@@ -1,12 +1,12 @@
 body{
 margin:0;
-font-family:Poppins,sans-serif;
+font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial;
 background:#0f172a;
 color:white;
 display:flex;
 }
 
-/* SIDEBAR APP STYLE */
+/* SIDEBAR */
 .sidebar{
 width:240px;
 height:100vh;
@@ -15,12 +15,27 @@ padding:20px;
 position:fixed;
 left:0;
 top:0;
-transition:0.3s;
 }
 
-.sidebar h2{
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:25px;
+}
+
+.logo-box img{
+width:45px;
+height:45px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #38bdf8;
+}
+
+.logo-box span{
 color:#38bdf8;
-margin-bottom:20px;
+font-weight:bold;
+font-size:18px;
 }
 
 .sidebar a{
@@ -53,7 +68,7 @@ position:fixed;
 top:15px;
 left:15px;
 cursor:pointer;
-z-index:2000;
+z-index:999;
 color:white;
 }
 
@@ -61,6 +76,7 @@ color:white;
 
 .sidebar{
 left:-260px;
+transition:0.3s;
 }
 
 .sidebar.active{
@@ -76,6 +92,12 @@ display:block;
 }
 }
 
+/* HERO */
+.hero{
+text-align:center;
+padding:30px 0;
+}
+
 /* CARDS */
 .card{
 background:#1e293b;
@@ -89,12 +111,6 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
-/* HERO */
-.hero{
-padding:30px 0;
-text-align:center;
-}
-
 /* BUTTON */
 .btn{
 background:linear-gradient(45deg,#38bdf8,#0ea5e9);
@@ -103,4 +119,21 @@ border-radius:8px;
 color:black;
 text-decoration:none;
 display:inline-block;
+}
+
+/* FLOAT WHATSAPP */
+.float-wa{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+z-index:9999;
 }
