@@ -7,24 +7,23 @@
 
 <body>
 
-<header class="navbar">
-<div class="logo">Mbuguah Designs</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="menu-btn" onclick="toggle()">☰</div>
 
-<nav class="menu" id="menu">
+<div class="sidebar" id="sidebar">
+<h2>Order System</h2>
+
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
 <a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
 <a href="dashboard.html">Dashboard</a>
-</nav>
-</header>
+</div>
+
+<div class="main">
 
 <section class="hero">
 <h2>Place Order</h2>
 </section>
-
-<section class="grid">
 
 <form action="https://formsubmit.co/mbuguahdesigns@gmail.com" method="POST" class="card">
 
@@ -38,19 +37,24 @@
 <option>Branding - Ksh 2000</option>
 </select><br><br>
 
-<textarea name="message" placeholder="Details"></textarea><br><br>
+<textarea name="details" placeholder="Describe your order"></textarea><br><br>
 
 <button class="btn">Submit Order</button>
 
 </form>
 
-</section>
+<div class="card">
+<h3>Payment</h3>
+<p>M-Pesa: 0790234031</p>
+</div>
 
-<section class="hero">
-<h2>Payment</h2>
-<p>M-Pesa Pay to: 0790234031</p>
-<a class="btn" href="https://wa.me/254790234031">Confirm Payment</a>
-</section>
+</div>
+
+<script>
+function toggle(){
+document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
