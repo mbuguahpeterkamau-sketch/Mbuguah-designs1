@@ -7,47 +7,37 @@
 
 <body>
 
-<header class="navbar">
-<div class="logo">Mbuguah Designs</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="menu-btn" onclick="toggle()">☰</div>
 
-<nav class="menu" id="menu">
+<div class="sidebar" id="sidebar">
+<h2>Portfolio</h2>
+
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
 <a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
 <a href="dashboard.html">Dashboard</a>
-</nav>
-</header>
-
-<section class="hero">
-<h2>Our Portfolio</h2>
-</section>
-
-<div class="grid gallery">
-
-<img src="logo1.jpg" onclick="openImg(this)">
-<img src="poster1.jpg" onclick="openImg(this)">
-<img src="flyer1.jpg" onclick="openImg(this)">
-
 </div>
 
-<div id="lightbox" onclick="closeImg()">
-<img id="bigimg">
+<div class="main">
+
+<section class="hero">
+<h2>Our Work</h2>
+</section>
+
+<div class="card">
+<img src="logo1.jpg" width="100%">
+</div>
+
+<div class="card">
+<img src="poster1.jpg" width="100%">
+</div>
+
 </div>
 
 <script>
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("active");
-}
-
-function openImg(img){
-document.getElementById("lightbox").style.display="flex";
-document.getElementById("bigimg").src=img.src;
-}
-
-function closeImg(){
-document.getElementById("lightbox").style.display="none";
+function toggle(){
+document.getElementById("sidebar").classList.toggle("active");
 }
 </script>
 
