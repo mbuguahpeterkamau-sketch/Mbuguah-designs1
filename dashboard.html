@@ -7,36 +7,41 @@
 
 <body>
 
-<header class="navbar">
-<div class="logo">Dashboard</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="menu-btn" onclick="toggle()">☰</div>
 
-<nav class="menu" id="menu">
+<div class="sidebar" id="sidebar">
+<h2>Dashboard</h2>
+
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
 <a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
 <a href="dashboard.html">Dashboard</a>
-</nav>
-</header>
+</div>
+
+<div class="main">
 
 <section class="hero">
-<h2>Business Dashboard</h2>
+<h2>SaaS Dashboard</h2>
 </section>
-
-<div class="grid">
 
 <div class="card">
 <h3>Orders</h3>
-<p>0 Active</p>
+<p>No database yet (next upgrade)</p>
 </div>
 
 <div class="card">
 <h3>Revenue</h3>
-<p>Ksh 0</p>
+<p>Ksh tracking manual</p>
 </div>
 
 </div>
+
+<script>
+function toggle(){
+document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
